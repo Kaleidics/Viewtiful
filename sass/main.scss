@@ -1,64 +1,17 @@
-$color-primary: #0D2C54;
-$color-secondary: #0D2C54;
-$color-tertiary: #F6511D;
-$color-grey-dark: #777;
-$color-white: #fff;
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
 
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+@import "components/button";
 
-html {
-    font-size: 62.5%;
-}
+@import "layout/header";
 
-body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: $color-grey-dark;
-    padding: 3rem;
-    box-sizing: border-box;
-}
-
-.header {
-    height: 95vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary, .3),
-        rgba($color-secondary, .5),  
-        rgba($color-tertiary, .7)), 
-        url("../assets/hero.jpg"
-    );
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    clip-path: polygon(50% 0, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
-    backface-visibility: hidden;
-
-    &__logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
-    }
-
-    &__logo {
-        height: 3.5rem;
-    }
-
-    &__text-box {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-49%, -49%);
-        text-align: center;
-    }
-}
+@import "pages/home";
 
 .heading-primary {
     color: $color-white;
@@ -72,7 +25,7 @@ body {
         font-size: 6rem;
         font-weight: 400;
         letter-spacing: 3.5rem;
-        animation: moveInLeft 1.5s ease-out .5s backwards;
+        animation: moveInLeft 1.5s ease-out .75s backwards;
         padding-left: 35px;
     }
 
@@ -81,51 +34,7 @@ body {
         font-size: 2rem;
         font-weight: 400;
         letter-spacing: 1rem;
-        animation: moveInRight 1.5s ease-out .5s backwards;
-    }
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    80% {
-        transform: translateX(1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    80% {
-        transform: translateX(-1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(3rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
+        animation: moveInRight 1.5s ease-out .75s backwards;
     }
 }
 
