@@ -1,0 +1,22 @@
+{
+  "name": "photo-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaleidics/Viewtiful-Photography.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaleidics/Viewtiful-Photography/issues"
+  },
+  "homepage": "https://github.com/Kaleidics/Viewtiful-Photography#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
