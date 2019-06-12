@@ -7,7 +7,7 @@ install:
   - npm ci
 
 script:
-  - npm start
+  - npm run sass
 
 deploy:
   provider: pages
