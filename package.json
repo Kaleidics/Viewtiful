@@ -16,7 +16,8 @@
     "url": "https://github.com/Kaleidics/Viewtiful-Photography/issues"
   },
   "homepage": "https://github.com/Kaleidics/Viewtiful-Photography#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "node-sass": "^4.12.0"
   }
 }
