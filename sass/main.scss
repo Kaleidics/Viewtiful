@@ -8,7 +8,9 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/composition";
 
+@import "layout/grid";
 @import "layout/header";
 
 @import "pages/home";
@@ -49,7 +51,7 @@
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
-        font-size: 1.6rem;
+        font-size: $default-font-size;
     }
 
     &:hover {

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass sass/main.scss build/style.css -w",
-    "compile": "node-sass sass/main.scss css/style.css"
+    "sass": "node-sass sass/main.scss build/style.css",
+    "compile": "npm run && node-sass sass/main.scss css/style.css"
   },
   "repository": {
     "type": "git",
