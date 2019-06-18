@@ -11,6 +11,7 @@
     background-position: top;
     position: relative;
     clip-path: polygon(50% 0, 100% 0, 100% 85vh, 50% 100%, 0 85vh, 0 0);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
     &__logo-box {
