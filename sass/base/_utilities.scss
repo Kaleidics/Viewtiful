@@ -1,0 +1,18 @@
+.u-center-text { text-align: center !important; }
+
+.u-margin-bottom-big { margin-bottom: 8rem !important; }
+.u-margin-bottom-medium { margin-bottom: 4rem !important; }
+.u-margin-bottom-small { margin-bottom: 1.5rem !important; }
+
+.u-margin-top-big { margin-bottom: 8em !important; }
+.u-margin-top-huge { margin-bottom: 10em !important; }
+
+.u-word-spacing-small {word-spacing: .2rem !important; }
+
+.u-heading-green { 
+    background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark) !important;
+}
+
+.u-heading-red {
+    background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark) !important;
+}
